@@ -1,13 +1,16 @@
-import { UserButton } from "@clerk/nextjs";
+import AccountCard from "@/components/account-card";
+import { UserButton, currentUser } from "@clerk/nextjs";
 import { FC } from "react";
 
 interface pageProps {}
 
-const page: FC<pageProps> = ({}) => {
+const page = async ({}) => {
+  const user = await currentUser();
   return (
     <>
-      <div>Fetch all post here by the user here</div>
-      <UserButton afterSignOutUrl="/" />
+      <main className="flex flex-col items-center justify-center min-h-screen p-24 text-center">
+        <AccountCard user={user} />
+      </main>
     </>
   );
 };

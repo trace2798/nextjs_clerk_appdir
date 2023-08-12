@@ -5,9 +5,9 @@ import { Poppins } from "next/font/google";
 
 import { ModeToggle } from "./mode-toggle";
 // import ProfileDropdownMenu from "./profile-menu";
-import { Button } from "./ui/button";
-import { UserButton, auth, currentUser } from "@clerk/nextjs";
+import { UserButton, currentUser } from "@clerk/nextjs";
 import AuthProviders from "./auth-provider";
+import { Button } from "./ui/button";
 
 const font = Poppins({ weight: "600", subsets: ["latin"] });
 
@@ -25,7 +25,7 @@ const Navbar = async () => {
                 font.className
               )}
             >
-              Graphy
+              Grafbase x Clerk
             </h1>
           </Link>
         </div>
@@ -36,8 +36,8 @@ const Navbar = async () => {
               <UserButton afterSignOutUrl="/" />
               {/* <ProfileDropdownMenu session={session} /> */}
               <ModeToggle />
-              <Link href="/create-post">
-                <Button variant="ghost">Post</Button>
+              <Link href="/explore">
+                <Button variant="ghost">Account Info</Button>
               </Link>
             </>
           ) : (
