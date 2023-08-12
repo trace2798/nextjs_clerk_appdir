@@ -2,6 +2,7 @@
   "name": "nextjs_clerk_appdir",
   "version": "0.1.0",
   "private": true,
+  "author": "Shreyas Chaliha aka Trace",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
