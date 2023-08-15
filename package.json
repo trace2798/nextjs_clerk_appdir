@@ -43,6 +43,8 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@grafbase/sdk": "^0.0.25"
+    "@grafbase/nextjs-plugin": "^0.0.2",
+    "@grafbase/sdk": "^0.0.25",
+    "grafbase": "^0.32.2"
   }
 }

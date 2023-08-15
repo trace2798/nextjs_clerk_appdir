@@ -1,16 +1,18 @@
 /** @type {import('next').NextConfig} */
+const { withGrafbase } = require("@grafbase/nextjs-plugin");
+
 const nextConfig = {
   images: {
-    domains: ['avatars.githubusercontent.com', 'res.cloudinary.com', 'task.com']
+    domains: ["avatars.githubusercontent.com"],
   },
   experimental: {
-    serverComponentsExternalPackages: ['cloudinary', 'graphql-request']
+    serverComponentsExternalPackages: ["graphql-request"],
   },
-  eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
-    ignoreDuringBuilds: true
-  }
-}
 
-module.exports = nextConfig
+  withGrafbase: {
+    reactStrictMode: true,
+    swcMinify: true,
+  },
+};
+
+module.exports = nextConfig;
