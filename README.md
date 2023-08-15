@@ -1,4 +1,3 @@
-https://shreyas-chaliha.hashnode.dev/integrating-clerk-with-grafbase-and-grafbase-nextjs-plugin
 # Integrating Clerk with [Grafbase](https://grafbase.com) and using [Grafbase Next.Js Plugin](https://grafbase.com/docs/tools/nextjs-plugin).
 
 ### This repo is for my submission for the [Grafbase](https://grafbase.com) X [Hashnode](https://hashnode.com) X [hackathon](https://hashnode.com/hackathons/grafbase) which took place from August 1 - August 15, 2023
